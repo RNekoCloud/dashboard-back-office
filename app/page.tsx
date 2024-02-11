@@ -6,7 +6,9 @@ export default function Home() {
     <>
       <main className="flex">
         <SideBar />
-        <h1>ini home</h1>
+        <h1 className="text-3xl font-bold h-screen w-full flex justify-center items-center">
+          Selamat Datang Admin
+        </h1>
       </main>
     </>
   );
