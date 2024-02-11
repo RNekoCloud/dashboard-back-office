@@ -6,18 +6,18 @@ export default function SideBar() {
   const pathName = usePathname();
 
   return (
-    <header className="py-[20px] fixed top-0 px-[10px] bg-black w-[260px] h-screen justify-between flex flex-col">
+    <header className="py-[20px] fixed top-0 w-[265px] h-screen justify-between flex flex-col shadow-[1px_0px_5px_0px_#00000024] z-[20]">
       <section className="flex flex-col justify-between h-[380px]">
-        <h1 className="text-center text-xl text-white font-semibold">
-          Digi Dreams Dashboard
-        </h1>
+        <h1 className="text-center text-2xl font-semibold">Digi Dreams</h1>
 
-        <nav className="w-full">
+        <nav className="w-full px-[20px]">
           <ul className="gap-[10px] flex flex-col w-full">
             <li className="w-full">
               <Link
-                className={`font-semibold py-[10px] pl-[20px] rounded-md flex text-white w-full ${
-                  pathName === "/" ? "bg-blue-500" : "hover:bg-gray-600"
+                className={`py-[10px] font-semibold justify-center items-center rounded-md flex w-full ${
+                  pathName === "/"
+                    ? "bg-blue-500 text-white"
+                    : "hover:bg-gray-300"
                 } active:scale-[0.96] transition-[0.3s]`}
                 href="/"
               >
@@ -26,10 +26,10 @@ export default function SideBar() {
             </li>
             <li className="w-full">
               <Link
-                className={`font-semibold py-[10px] pl-[20px] rounded-md flex text-white w-full ${
+                className={`py-[10px] font-semibold justify-center items-center rounded-md flex w-full ${
                   pathName === "/internship"
-                    ? "bg-blue-500"
-                    : "hover:bg-gray-600"
+                    ? "bg-blue-500 text-white"
+                    : "hover:bg-gray-300"
                 } active:scale-[0.96] transition-[0.3s]`}
                 href="/internship"
               >
@@ -38,8 +38,10 @@ export default function SideBar() {
             </li>
             <li className="w-full">
               <Link
-                className={`font-semibold py-[10px] pl-[20px] rounded-md flex text-white w-full ${
-                  pathName === "/blog" ? "bg-blue-500" : "hover:bg-gray-600"
+                className={`py-[10px] font-semibold justify-center items-center rounded-md flex w-full ${
+                  pathName === "/blog"
+                    ? "bg-blue-500 text-white"
+                    : "hover:bg-gray-300"
                 } active:scale-[0.96] transition-[0.3s]`}
                 href="/blog"
               >
@@ -48,10 +50,10 @@ export default function SideBar() {
             </li>
             <li className="w-full">
               <Link
-                className={`font-semibold py-[10px] pl-[20px] rounded-md flex text-white w-full ${
+                className={`py-[10px] font-semibold justify-center items-center rounded-md flex w-full ${
                   pathName === "/testimonial"
-                    ? "bg-blue-500"
-                    : "hover:bg-gray-600"
+                    ? "bg-blue-500 text-white"
+                    : "hover:bg-gray-300"
                 } active:scale-[0.96] transition-[0.3s]`}
                 href="/testimonial"
               >
@@ -60,10 +62,10 @@ export default function SideBar() {
             </li>
             <li className="w-full">
               <Link
-                className={`font-semibold py-[10px] pl-[20px] rounded-md flex text-white w-full ${
+                className={`py-[10px] font-semibold justify-center items-center rounded-md flex w-full ${
                   pathName === "/certificate"
-                    ? "bg-blue-500"
-                    : "hover:bg-gray-600"
+                    ? "bg-blue-500 text-white"
+                    : "hover:bg-gray-300"
                 } active:scale-[0.96] transition-[0.3s]`}
                 href="/certificate"
               >
@@ -74,7 +76,7 @@ export default function SideBar() {
         </nav>
       </section>
 
-      <h1 className="text-xl text-center text-white font-semibold">
+      <h1 className="text-xl text-center font-semibold border-t-[1px] border-solid border-black pt-[15px]">
         Dashboard V1
       </h1>
     </header>
