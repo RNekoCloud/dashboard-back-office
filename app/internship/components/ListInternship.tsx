@@ -87,11 +87,11 @@ function ListMember() {
                     <p className="text-[15px]">{item.content.school}</p>
                     <p className="text-[15px]">{item.content.position}</p>
                     <p className="text-[15px]">Points: {item.points}</p>
-                    <div className="flex gap-[10px] items-center">
+                    <div className="flex gap-[10px] mt-[5px] items-center">
                       <button>
                         <RiDeleteBinLine className="text-red-500" size={20} />
                       </button>
-                      <label htmlFor={`my-modal-${index + 1}`} className="btn">
+                      <label htmlFor={`my-modal-${index + 1}`} className="">
                         <FaRegEdit className="text-blue-500" size={20} />
                       </label>
 

@@ -6,11 +6,11 @@ export default function SideBar() {
   const pathName = usePathname();
 
   return (
-    <header className="py-[20px] fixed top-0 w-[265px] h-screen justify-between flex flex-col shadow-[1px_0px_5px_0px_#00000024] z-[20]">
+    <header className="py-[20px] fixed top-0 w-[262px] h-screen justify-between flex flex-col shadow-[1px_0px_5px_0px_#00000024] z-[20]">
       <section className="flex flex-col justify-between h-[380px]">
         <h1 className="text-center text-2xl font-semibold">Digi Dreams</h1>
 
-        <nav className="w-full px-[20px]">
+        <nav className="w-full px-[30px]">
           <ul className="gap-[10px] flex flex-col w-full">
             <li className="w-full">
               <Link

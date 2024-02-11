@@ -3,7 +3,7 @@ import { CiSquarePlus } from "react-icons/ci";
 export default function AddNewMember() {
   return (
     <>
-      <label htmlFor={`add-member-modal`} className="btn">
+      <label htmlFor={`add-member-modal`} className="">
         <CiSquarePlus className="text-blue-500" size={20} />
       </label>
 
