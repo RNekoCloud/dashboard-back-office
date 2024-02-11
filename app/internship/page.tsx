@@ -6,8 +6,9 @@ export default function Page() {
     <>
       <main className="flex">
         <SideBar />
-        <h1>ini Internship</h1>
-        <div>
+
+        <div className="pl-[360px] flex flex-col w-auto mt-[40px]">
+          <h1 className="text-xl font-semibold mb-[20px]">Internship Member</h1>
           <ListInternship />
         </div>
       </main>

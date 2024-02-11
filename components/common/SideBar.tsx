@@ -6,7 +6,7 @@ export default function SideBar() {
   const pathName = usePathname();
 
   return (
-    <header className="py-[20px] px-[10px] bg-black w-[220px] h-screen justify-between flex flex-col">
+    <header className="py-[20px] fixed top-0 px-[10px] bg-black w-[260px] h-screen justify-between flex flex-col">
       <section className="flex flex-col justify-between h-[380px]">
         <h1 className="text-center text-xl text-white font-semibold">
           Digi Dreams Dashboard
